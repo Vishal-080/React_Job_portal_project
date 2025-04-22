@@ -1,0 +1,80 @@
+{
+    "id": "101",
+    "title": "Front-End Developer",
+    "company": "Google",
+    "location": "Mumbai",
+    "salary": "7 LPA",
+    "employment_type": "Full-time",
+    "skills": ["JavaScript","HTML", "CSS","React","Redux"],
+    "job_category": "Engineering",
+    "number_of_opening": 4,
+    "job_created_on": "04/15/2025"
+},
+{
+    "id": "102",
+    "title": "Back-End Developer",
+    "company": "Meta",
+    "location": "Hyderabad",
+    "salary": "10 LPA",
+    "employment_type": "Full-time",
+    "skills": ["JavaScript","NodeJs","Express","MongoDB","Json"],
+    "job_category": "Engineering",
+    "number_of_opening": 1,
+    "job_created_on": "03/25/2025"
+},
+{
+    "id": "103",
+    "title": "PHP Developer",
+    "company": "LogicGate",
+    "location": "Remote",
+    "salary": "8 LPA",
+    "employment_type": "Full-time",
+    "skills": ["PHP","HTML", "CSS","Javascript"],
+    "job_category": "Engineering",
+    "number_of_opening": 2,
+    "job_created_on": "04/10/2025"
+},{
+    "id": "104",
+    "title": "ML Engineer",
+    "company": "Amazon",
+    "location": "Bangalore",
+    "salary": "12 LPA",
+    "employment_type": "Full-time",
+    "skills": ["LLM","ChatGPT", "AI","GenAI"],
+    "job_category": "Engineering",
+    "number_of_opening": 1,
+    "job_created_on": "04/01/2025"
+},{
+    "id": "105",
+    "title": "MERN Stack Developer",
+    "company": "Github",
+    "location": "Hybrid, Pune",
+    "salary": "15 LPA",
+    "employment_type": "Full-time",
+    "skills": ["MongoDB", "Express", "React", "NodeJs"],
+    "job_category": "Engineering",
+    "number_of_opening": 1,
+    "job_created_on": "04/05/2025"
+},{
+    "id": "106",
+    "title": "Sales Manager",
+    "company": "Lenovo",
+    "location": "Delhi",
+    "salary": "6 LPA",
+    "employment_type": "Full-time",
+    "skills": ["Sales","Excel", "Ms Word","Marketing","Management"],
+    "job_category": "Sales",
+    "number_of_opening": 2,
+    "job_created_on": "04/16/2025"
+},{
+    "id": "107",
+    "title": "IOS Developer",
+    "company": "Apple",
+    "location": "Remote",
+    "salary": "14 LPA",
+    "employment_type": "Part-time",
+    "skills": ["MacOS","Swift"],
+    "job_category": "Engineering",
+    "number_of_opening": 1,
+    "job_created_on": "04/07/2025"
+}
