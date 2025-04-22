@@ -2,6 +2,12 @@
 
 @import "tailwindcss";
 
+@layer base{
+  body{
+    background: linear-gradient(rgb(17, 24, 39), rgb(88, 28, 135), rgb(124, 58, 237));
+  }
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
