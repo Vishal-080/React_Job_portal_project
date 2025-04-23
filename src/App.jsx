@@ -8,7 +8,7 @@ function App() {
     <div>
       <Navbar />
       <Header />
-      <JobCard />
+      {/* <JobCard /> */}
     </div>
   )
 }
