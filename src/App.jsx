@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Header />
       <SearchJob />
-      {/* <JobCard /> */}
+      <JobCard />
     </div>
   )
 }
