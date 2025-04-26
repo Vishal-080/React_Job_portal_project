@@ -10,7 +10,8 @@
       "skills": ["JavaScript", "HTML", "CSS", "React", "Redux"],
       "job_category": "Engineering",
       "number_of_opening": 4,
-      "job_created_on": "04/15/2025"
+      "job_created_on": "04/24/2025",
+      "job_link": "https://www.google.com/about/careers/applications/"
     },
     {
       "id": "102",
@@ -22,7 +23,8 @@
       "skills": ["JavaScript", "NodeJs", "Express", "MongoDB", "Json"],
       "job_category": "Engineering",
       "number_of_opening": 1,
-      "job_created_on": "03/25/2025"
+      "job_created_on": "03/25/2025",
+      "job_link": "https://www.metacareers.com/"
     },
     {
       "id": "103",
@@ -34,7 +36,8 @@
       "skills": ["PHP", "HTML", "CSS", "Javascript"],
       "job_category": "Engineering",
       "number_of_opening": 2,
-      "job_created_on": "04/10/2025"
+      "job_created_on": "04/10/2025",
+      "job_link": "https://www.logicgate.com/about-us/join-the-team/"
     },
     {
       "id": "104",
@@ -46,7 +49,8 @@
       "skills": ["LLM", "ChatGPT", "AI", "GenAI"],
       "job_category": "Engineering",
       "number_of_opening": 1,
-      "job_created_on": "04/01/2025"
+      "job_created_on": "04/01/2025",
+      "job_link": "https://www.amazon.jobs/en/"
     },
     {
       "id": "105",
@@ -58,7 +62,8 @@
       "skills": ["MongoDB", "Express", "React", "NodeJs"],
       "job_category": "Engineering",
       "number_of_opening": 1,
-      "job_created_on": "04/05/2025"
+      "job_created_on": "04/05/2025",
+      "job_link": "https://www.github.careers/careers-home/"
     },
     {
       "id": "106",
@@ -70,7 +75,8 @@
       "skills": ["Sales", "Excel", "Ms Word", "Marketing", "Management"],
       "job_category": "Sales",
       "number_of_opening": 2,
-      "job_created_on": "04/16/2025"
+      "job_created_on": "04/16/2025",
+      "job_link": "https://jobs.lenovo.com/en_US/careers"
     },
     {
       "id": "107",
@@ -82,7 +88,8 @@
       "skills": ["MacOS", "Swift"],
       "job_category": "Engineering",
       "number_of_opening": 1,
-      "job_created_on": "04/07/2025"
+      "job_created_on": "04/07/2025",
+      "job_link": "https://www.apple.com/careers/in/"
     }
   ]
 }
