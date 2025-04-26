@@ -6,7 +6,7 @@ const JobCard = (props) => {
   let date1 = dayjs(Date.now());
   let diffDate = date1.diff("04-20-2025", "day");
   console.log(props.jobData.title, "data");
-  const {title, id, company} = props.jobData;
+  const {title, id, company } = props.jobData;
   
   return (
     <div className='w-10/12 mx-auto my-2'>
