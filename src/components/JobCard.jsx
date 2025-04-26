@@ -2,8 +2,8 @@ import React from 'react';
 import dayjs from "dayjs";
 
 const JobCard = (props) => {
-  const {title, company,number_of_opening, job_created_on, job_link } = props.jobData;
-  let skills = ["JavaScript", "HTML", "CSS", "React", "Redux"];
+  const {title, company,number_of_opening, job_created_on, job_link,skills } = props.jobData;
+  // let skills = ["JavaScript", "HTML", "CSS", "React", "Redux"];
   let date1 = dayjs(Date.now());
   let diffDate = date1.diff(job_created_on, "day");
   
