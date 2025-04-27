@@ -9,6 +9,7 @@ const JobCard = (props) => {
     job_created_on,
     job_link,
     skills,
+    employment_type,
     salary,
   } = props.jobData;
 
@@ -16,14 +17,14 @@ const JobCard = (props) => {
   let diffDate = date1.diff(job_created_on, "day");
 
   return (
-    <div className="w-10/12 mx-auto my-2">
-      <div className="bg-zinc-200 px-6 py-4 rounded-xl shadow-2xl flex justify-between items-center hover:border hover:border-blue-500 hover:bg-zinc-100">
+    <div className="w-10/12 mx-auto my-4">
+      <div className="bg-zinc-200 px-6 py-4 rounded-xl shadow-black shadow-md flex justify-between items-center hover:border hover:border-blue-500 hover:bg-zinc-100">
         <div className="flex flex-col items-start gap-2">
           <h1 className="font-semibold">
             {title} - {company}
           </h1>
           <p>
-            Full-time &#x2022; {number_of_opening} Openings &#x2022; {salary}
+            {employment_type} &#x2022; {number_of_opening} Openings &#x2022; <span className="font-medium">{salary}</span>
           </p>
           <div className="flex items-center gap-2">
             {skills.map((item) => (
