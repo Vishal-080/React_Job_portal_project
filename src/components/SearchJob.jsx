@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SearchJob = () => {
+
+  const [searchJob, setSearchJob] = useState("");
+
   const handleSearch = () => {
     console.log("Hello");
   };
