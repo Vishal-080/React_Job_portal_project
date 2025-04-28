@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 const SearchJob = () => {
 
-  const [searchJob, setSearchJob] = useState("");
+  const [searchJob, setSearchJob] = useState({
+    "job_title": ""
+  });
 
   const handleSearch = () => {
     console.log("Hello");
