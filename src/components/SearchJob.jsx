@@ -2,22 +2,21 @@ import React, { useState } from "react";
 import { useImmer } from "use-immer";
 
 const SearchJob = () => {
-  
-  // Used UseImmer hook to update the object effectively; 
+  // Used UseImmer hook to update the object effectively;
 
   const [searchJob, setSearchJob] = useImmer({
-    "Job_title": "",
-    "Location": "",
-    "Job_Type": ""
+    Job_title: "",
+    Location: "",
+    Job_Type: "",
   });
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
 
-    setSearchJob(draft => {
+    setSearchJob((draft) => {
       draft[name] = value;
     });
-  }
+  };
 
   const handleSearch = () => {
     console.log(searchJob);
@@ -25,7 +24,12 @@ const SearchJob = () => {
 
   return (
     <div className="flex justify-center items-center gap-5 my-10 flex-wrap">
-      <select name="Job_title" value={searchJob.Job_title} onChange={handleChange} className="w-3/12  bg-white outline-none py-1 px-2 rounded">
+      <select
+        name="Job_title"
+        value={searchJob.Job_title}
+        onChange={handleChange}
+        className="w-3/12  bg-white outline-none py-1 px-2 rounded"
+      >
         <option value="" disabled hidden selected>
           Job Title
         </option>
@@ -37,7 +41,12 @@ const SearchJob = () => {
         <option value="ML Engineer">ML Engineer</option>
         <option value="MERN Stack Developer">MERN Stack Developer</option>
       </select>
-      <select name="Location" value={searchJob.Location} onChange={handleChange} className="w-2/12  bg-white outline-none py-1 px-2 rounded">
+      <select
+        name="Location"
+        value={searchJob.Location}
+        onChange={handleChange}
+        className="w-2/12  bg-white outline-none py-1 px-2 rounded"
+      >
         <option value="" disabled hidden selected>
           Location
         </option>
@@ -48,7 +57,12 @@ const SearchJob = () => {
         <option value="Remote">Remote</option>
         <option value="Hyderabad">Hyderabad</option>
       </select>
-      <select name="Job_Type" value={searchJob.Job_Type} onChange={handleChange} className="w-2/12  bg-white outline-none py-1 px-2 rounded">
+      <select
+        name="Job_Type"
+        value={searchJob.Job_Type}
+        onChange={handleChange}
+        className="w-2/12  bg-white outline-none py-1 px-2 rounded"
+      >
         <option value="" disabled hidden selected>
           Job Type
         </option>
