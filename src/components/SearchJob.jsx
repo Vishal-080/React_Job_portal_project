@@ -3,7 +3,9 @@ import React, { useState } from "react";
 const SearchJob = () => {
 
   const [searchJob, setSearchJob] = useState({
-    "job_title": ""
+    "Job_title": "",
+    "Location": "",
+    "Job_Type": ""
   });
 
   const handleSearch = () => {
@@ -12,7 +14,7 @@ const SearchJob = () => {
 
   return (
     <div className="flex justify-center items-center gap-5 my-10 flex-wrap">
-      <select className="w-3/12  bg-white outline-none py-1 px-2 rounded">
+      <select name="Job_title" value={searchJob.Job_title} className="w-3/12  bg-white outline-none py-1 px-2 rounded">
         <option value="" disabled hidden selected>
           Job Title
         </option>
