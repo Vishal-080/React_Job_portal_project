@@ -26,7 +26,7 @@ const SearchJob = () => {
         <option value="ML Engineer">ML Engineer</option>
         <option value="MERN Stack Developer">MERN Stack Developer</option>
       </select>
-      <select className="w-2/12  bg-white outline-none py-1 px-2 rounded">
+      <select name="Location" value={searchJob.Location} className="w-2/12  bg-white outline-none py-1 px-2 rounded">
         <option value="" disabled hidden selected>
           Location
         </option>
@@ -37,7 +37,7 @@ const SearchJob = () => {
         <option value="Remote">Remote</option>
         <option value="Hyderabad">Hyderabad</option>
       </select>
-      <select className="w-2/12  bg-white outline-none py-1 px-2 rounded">
+      <select name="Job_Type" value={searchJob.Job_Type} className="w-2/12  bg-white outline-none py-1 px-2 rounded">
         <option value="" disabled hidden selected>
           Job Type
         </option>
