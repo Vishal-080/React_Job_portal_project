@@ -29,7 +29,7 @@ const JobCard = (props) => {
           </p>
           <div className="flex items-center gap-2">
             {skills.map((item) => (
-              <p className="px-2 py-1 rounded-xl border">{item}</p>
+              <p key={item} className="px-2 py-1 rounded-xl border">{item}</p>
             ))}
           </div>
         </div>

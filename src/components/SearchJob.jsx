@@ -1,19 +1,26 @@
 import React, { useState } from "react";
+import { useImmer } from "use-immer";
 
 const SearchJob = () => {
+  
+  // Used UseImmer hook to update the object effectively; 
 
-  const [searchJob, setSearchJob] = useState({
+  const [searchJob, setSearchJob] = useImmer({
     "Job_title": "",
     "Location": "",
     "Job_Type": ""
   });
 
   const handleChange = (e) => {
-    console.log(e.target.value);
+    const {name, value} = e.target;
+
+    setSearchJob(draft => {
+      draft[name] = value;
+    });
   }
 
   const handleSearch = () => {
-    console.log("Hello");
+    console.log(searchJob);
   };
 
   return (
