@@ -5,6 +5,8 @@ import SearchJob from "./components/SearchJob";
 import {data} from "./assets/dummyJobData.json";
 
 function App() {
+
+  const filteredData = {};
   
   return (
     <div>
