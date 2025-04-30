@@ -3,7 +3,6 @@ import { useImmer } from "use-immer";
 
 const SearchJob = () => {
   // Used UseImmer hook to update the object effectively;
-
   const [searchJob, setSearchJob] = useImmer({
     Job_title: "",
     Location: "",
@@ -19,7 +18,7 @@ const SearchJob = () => {
   };
 
   const handleSearch = () => {
-    console.log(searchJob);
+   // console.log(searchJob);
   };
 
   return (
