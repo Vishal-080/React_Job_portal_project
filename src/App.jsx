@@ -9,7 +9,8 @@ function App() {
   const [jobData,setJobData] = useState(null);
 
   const filteredJobData = (props)=>{
-      console.log("Hello", data.filter(item => (item.employment_type==props.Job_type || item.location==props.Location || item.title==props.Job_title )));
+    setJobData("Hello", data.filter(item => (item.employment_type==props.Job_type || item.location==props.Location || item.title==props.Job_title )));
+     // (jobData, "job data");
   };
   
   return (
@@ -17,7 +18,8 @@ function App() {
       <Navbar />
       <Header />
       <SearchJob filteredJobData={filteredJobData}/>
-      {data.map((item)=><JobCard key={item.id} jobData={item}/>)}
+      {jobData ? jobData?.map((item)=><JobCard key={item.id} jobData={item}/>) :
+      data.map((item)=><JobCard key={item.id} jobData={item}/>)}
     </div>
   )
 }
