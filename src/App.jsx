@@ -7,7 +7,7 @@ import {data} from "./assets/dummyJobData.json";
 function App() {
 
   const filteredData = {
-    
+      
   };
   
   return (
