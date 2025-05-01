@@ -11,7 +11,7 @@ const JobCard = (props) => {
     job_link,
     skills,
     employment_type,
-    salary,
+    salary,location,
   } = props.jobData;
 
   let date1 = dayjs(Date.now());
@@ -25,7 +25,7 @@ const JobCard = (props) => {
             {title} - {company}
           </h1>
           <p>
-            {employment_type} &#x2022; {number_of_opening} Openings &#x2022; <span className="font-medium">{salary}</span>
+            {employment_type} &#x2022; {number_of_opening} Openings &#x2022; {location} &#x2022; <span className="font-medium">{salary}</span>
           </p>
           <div className="flex items-center gap-2">
             {skills.map((item) => (

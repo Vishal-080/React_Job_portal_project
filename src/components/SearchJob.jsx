@@ -6,7 +6,7 @@ const SearchJob = ({filteredJobData}) => {
   const [searchJob, setSearchJob] = useImmer({
     Job_title: "",
     Location: "",
-    Job_Type: "",
+    Job_type: "",
   });
 
   const handleChange = (e) => {
@@ -19,6 +19,11 @@ const SearchJob = ({filteredJobData}) => {
 
   const handleSearch = () => {
     filteredJobData(searchJob);
+    setSearchJob({
+      Job_title: "",
+    Location: "",
+    Job_type: "",
+    })
   };
 
   return (
@@ -57,8 +62,8 @@ const SearchJob = ({filteredJobData}) => {
         <option value="Hyderabad">Hyderabad</option>
       </select>
       <select
-        name="Job_Type"
-        value={searchJob.Job_Type}
+        name="Job_type"
+        value={searchJob.Job_type}
         onChange={handleChange}
         className="w-2/12  bg-white outline-none py-1 px-2 rounded"
       >

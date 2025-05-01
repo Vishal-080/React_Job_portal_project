@@ -9,7 +9,7 @@ function App() {
   const [jobData,setJobData] = useState(null);
 
   const filteredJobData = (props)=>{
-      console.log("Hello", data.filter(item => (item.location==props.Location && item.location==props.Location )));
+      console.log("Hello", data.filter(item => (item.employment_type==props.Job_type || item.location==props.Location || item.title==props.Job_title )));
   };
   
   return (
