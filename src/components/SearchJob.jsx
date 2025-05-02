@@ -19,11 +19,11 @@ const SearchJob = ({filteredJobData}) => {
 
   const handleSearch = () => {
     filteredJobData(searchJob);
-    setSearchJob({
-      Job_title: "",
-    Location: "",
-    Job_type: "",
-    })
+    // setSearchJob({
+    //   Job_title: "",
+    // Location: "",
+    // Job_type: "",
+    // })
   };
 
   return (
