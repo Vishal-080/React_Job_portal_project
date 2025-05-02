@@ -6,29 +6,42 @@ import { data } from "./assets/dummyJobData.json";
 import { useState } from "react";
 
 function App() {
-  const [jobData, setJobData] = useState(null);
+  const [jobData, setJobData] = useState(data);
 
-  const filteredJobData = (props) => {
-    setJobData(
-      "Hello",
-      data.filter(
-        (item) =>
-          item.employment_type == props.Job_type ||
-          item.location == props.Location ||
-          item.title == props.Job_title
-      )
-    );
-    // (jobData, "job data");
+  const filteredJobData = (filters) => {
+    // console.log(filters,"filters");
+    // const {Job_type, Job_title, Location} = filter;
+
+    const filterdata = jobData?.filter((job) => {
+      return Object.entries(filters).every(([key, value]) => {
+        // convert filter keys to match job object keys if needed
+        if (value === '') return true;
+        if (key === "Job_title") return job.title === value;
+        if (key === "Location") return job.location === value;
+        if (key === "Job_type") return job.employment_type === value;
+
+        return true; // default: ignore unknown filters
+      });
+    });
+    console.log(filterdata,"filterdata");
+    setJobData(filterdata);
   };
+
+  // data.filter(
+  //   (item) =>
+  //     item.employment_type == Job_type ||
+  //     item.location == Location ||
+  //     item.title == Job_title
+  // );
+
 
   return (
     <div>
       <Navbar />
       <Header />
       <SearchJob filteredJobData={filteredJobData} />
-      {jobData
-        ? jobData?.map((item) => <JobCard key={item.id} jobData={item} />)
-        : data.map((item) => <JobCard key={item.id} jobData={item} />)}
+      {jobData?.map((item) => <JobCard key={item.id} jobData={item} />)}
+      {jobData.length==0 && <div className="text-white text-3xl text-center my-6">No Job Found </div>}
     </div>
   );
 }

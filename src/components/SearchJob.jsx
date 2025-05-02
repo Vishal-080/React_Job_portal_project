@@ -37,9 +37,9 @@ const SearchJob = ({filteredJobData}) => {
         <option value="" disabled hidden selected>
           Job Title
         </option>
-        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Front-End Developer">Front-End Developer</option>
         <option value="iOS Developer">iOS Developer</option>
-        <option value="Backend Developer">Backend Developer</option>
+        <option value="Back-End Developer">Back-End Developer</option>
         <option value="Sales Manager">Sales Manager</option>
         <option value="PHP Developer">PHP Developer</option>
         <option value="ML Engineer">ML Engineer</option>
