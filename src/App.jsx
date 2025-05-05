@@ -10,7 +10,6 @@ function App() {
 
   const filteredJobData = (filters) => {
     // console.log(filters,"filters");
-    // const {Job_type, Job_title, Location} = filter;
 
     const filterdata = jobData?.filter((job) => {
       return Object.entries(filters).every(([key, value]) => {
