@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import SearchJob from "./components/SearchJob";
 import { data } from "./assets/dummyJobData.json";
 import { useState } from "react";
+import Error from "./components/ErrorPage";
 
 function App() {
   const [jobData, setJobData] = useState(data);
@@ -42,7 +43,7 @@ function App() {
         <JobCard key={item.id} jobData={item} />
       ))}
       {jobData.length == 0 && (
-        
+        <Error/>
       )}
     </div>
   );
