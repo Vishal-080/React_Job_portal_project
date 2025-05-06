@@ -42,9 +42,7 @@ function App() {
         <JobCard key={item.id} jobData={item} />
       ))}
       {jobData.length == 0 && (
-        <div className="text-white text-3xl text-center my-6">
-          No Job Found...! <br /> Please Reload
-        </div>
+        
       )}
     </div>
   );
