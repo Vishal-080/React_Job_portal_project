@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useImmer } from "use-immer";
 
-const SearchJob = ({filteredJobData}) => {
+const SearchJob = ({ filteredJobData }) => {
   // Used UseImmer hook to update the object effectively;
   const [searchJob, setSearchJob] = useImmer({
     Job_title: "",
