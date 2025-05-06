@@ -42,9 +42,7 @@ function App() {
       {jobData?.map((item) => (
         <JobCard key={item.id} jobData={item} />
       ))}
-      {jobData.length == 0 && (
-        <Error/>
-      )}
+      {jobData.length == 0 && <Error />}
     </div>
   );
 }
