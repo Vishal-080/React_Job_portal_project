@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")).render(
     <ErrorBoundary
       fallback={
         <p className="text-white my-20 text-center text-3xl font-bold">
-          Something Went Wrong ! <br />
+          Something Went Wrong...! <br />
           <br />
           <br /> please reload...
         </p>
