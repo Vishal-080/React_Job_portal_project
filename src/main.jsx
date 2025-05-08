@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")).render(
         <p className="text-white my-20 text-center text-3xl font-bold">
           Something Went Wrong...! <br />
           <br />
-          <br /> please reload...
+          <br /> please reload...!
         </p>
       }
     >
