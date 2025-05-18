@@ -1,4 +1,3 @@
-import JobCard from "./components/JobCard";
 import Navbar from "./components/Navbar";
 import SearchJob from "./components/SearchJob";
 import { data } from "./assets/dummyJobData.json";
