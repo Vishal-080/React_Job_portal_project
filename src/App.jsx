@@ -7,6 +7,7 @@ import Error from "./components/ErrorPage";
 import {lazy, Suspense} from "react";
 
 const Header = lazy(() => import("./components/Header"));
+const JobCard = lazy(() => import("./components/JobCard"));
 
 function App() {
   const [jobData, setJobData] = useState(data);
