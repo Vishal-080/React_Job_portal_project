@@ -1,10 +1,13 @@
-import Header from "./components/Header";
+
 import JobCard from "./components/JobCard";
 import Navbar from "./components/Navbar";
 import SearchJob from "./components/SearchJob";
 import { data } from "./assets/dummyJobData.json";
 import { useState } from "react";
 import Error from "./components/ErrorPage";
+import {lazy, Suspense} from "react";
+
+const Header = lazy(() => import("./components/Header"));
 
 function App() {
   const [jobData, setJobData] = useState(data);
@@ -37,7 +40,9 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Suspense fallback={<h1>Loading...</h1>}>
+            <Header />
+      </Suspense>
       <SearchJob filteredJobData={filteredJobData} />
       {jobData?.map((item) => (
         <JobCard key={item.id} jobData={item} />
